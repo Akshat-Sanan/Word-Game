@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+    background-color: #9BB89C;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overLayMessage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #9BB89C;
+    color: white;
+}
+
+.overLayMessage button{
+    border: none;
+    border-radius: 15px;
+    padding: 15px 30px;
+    background-color: white;
+    color: #6e8b6f;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.overLayMessage button:hover{
+    color: white;
+    background-color: #6e8b6f;
+    cursor: pointer;
+}
+
+.overLayMessage p{
+    font-size: 26px;
+    padding: 10px;
+}
+
+.panel{
+    width: 80%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.panelTop{
+    height: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #49664A;
+}
+
+.panelTop > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.word{
+    background-color: rgb(233, 233, 233);
+    font-size: 21px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: rgb(162, 162, 162);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.timer, .score{
+    background-color: rgb(233, 233, 233);
+    font-size: 21px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.highestScore{
+    background-color: rgb(233, 233, 233);
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: rgb(88, 88, 88);
+    font-weight: bold;
+}
+
+
+.bubble{
+    text-transform: uppercase;
+}
+
+.word span{
+    padding: 0 3px;
+}
+
+
+
+.panelBottom{
+    /* height: calc(100% - 50px); */
+    padding: 20px;
+    display: grid;
+    grid-template-columns:repeat(15, 1fr);
+    /* grid-template-rows: repeat(10, 1fr); */
+    gap: 20px;
+    background-color: rgb(233, 233, 233);
+}
+
+.panelBottom div{
+    width: 50px;
+    height: 50px;
+    background-color: #6e8b6f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.panelBottom div:hover{
+    cursor: pointer;
+    background-color: #49664A;
+}
+
+.correct{
+    color: green;
+}
+.wrong{
+    color: red;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* CSS styles for extra small devices */
+    /* .panelBottom{
+        padding: 10px;
+        grid-template-columns:repeat(10, auto);
+        grid-template-rows:repeat(5, auto);
+        gap: 10px;
+    }
+
+    .word{
+        background-color: rgb(233, 233, 233);
+        font-size: 18px;
+        padding: 5px 10px;
+        border-radius: 10px;
+    } */
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    /* CSS styles for small devices */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    /* CSS styles for medium devices */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    /* CSS styles for large devices */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1201px) {
+    /* CSS styles for extra large devices */
+}
